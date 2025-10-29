@@ -133,6 +133,24 @@ body {
   transform: scale(1.05);
 }
 
+.hero-img {
+  width: 100%;      /* se adaptează la lățimea containerului */
+  max-width: 500px; /* pentru desktop să nu fie uriașă */
+  height: auto;     /* păstrează proporțiile */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* Responsiv pentru telefoane */
+@media (max-width: 768px) {
+  .hero-img {
+    max-width: 90%;  /* ocupă aproape tot ecranul mobil */
+    margin-top: 15px;
+  }
+}
+
+
 /* ======================= */
 /* ===== Sections ======= */
 section {
@@ -500,24 +518,7 @@ footer .socials a:hover {
   color: #333; 
   font-size: 0.95em; 
 }
-.diploma-images {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-}
-.diploma-img {
-  width: 140px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: var(--shadow-light);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.diploma-img:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow-deep);
-}
+
 
 /* ======================= */
 /* ===== Skills / Hobby Cards ===== */
