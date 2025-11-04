@@ -17,8 +17,6 @@ Magazin online dezvoltat în **Django + Python**, cu:
 - ✅ Autentificare utilizatori și dashboard personal  
 - ✅ Urmărire comenzi  
 
-🔗 [Live Demo](https://sanduandreea22.github.io/proiectcommerce/)  
-💾 [Cod sursă GitHub](https://github.com/SanduAndreea22/proiectcommerce)
 
 ---
 
@@ -33,8 +31,6 @@ Magazin online creat cu **HTML5, CSS3 și JavaScript**, complet responsive și i
 - ✅ Adăugare în coș și checkout cu popup animat  
 - ✅ Admin: adăugare/editare/ștergere produse  
 
-🔗 [Live Demo](https://sanduandreea22.github.io/AndreeaSPerfumStore/)  
-💾 [Cod sursă GitHub](https://github.com/SanduAndreea22/AndreeaSPerfumStore)
 
 ---
 
