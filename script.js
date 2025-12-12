@@ -1,74 +1,110 @@
-// ===============================
-// ===== SELECTORS =====
+// =======================
+// ===== Fade-in Scroll ===
 const faders = document.querySelectorAll('.fade-in');
-const backToTopBtns = document.querySelectorAll('.back-to-top');
-const projectCards = document.querySelectorAll('.project-card');
-const skillCards = document.querySelectorAll('.skill-card');
-const contactCards = document.querySelectorAll('.contact-card');
-const heroSpan = document.querySelector('.hero h1 span');
-const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-// ===============================
-// ===== FADE-IN ON SCROLL =====
 const appearOptions = {
   threshold: 0.2,
   rootMargin: "0px 0px -50px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
   entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
+    if(!entry.isIntersecting) return;
     entry.target.classList.add('visible');
     observer.unobserve(entry.target);
   });
 }, appearOptions);
 
-faders.forEach(fader => appearOnScroll.observe(fader));
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
 
-// ===============================
-// ===== BACK TO TOP BUTTON =====
-backToTopBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+// =======================
+// ===== Back-to-top Button ===
+const backToTopBtn = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 300){
+    backToTopBtn.style.opacity = '1';
+    backToTopBtn.style.visibility = 'visible';
+  } else {
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.visibility = 'hidden';
+  }
+});
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+// =======================
+// ===== Portfolio Cards Hover Effect ===
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transform = 'translateY(-10px) scale(1.03)';
+    card.style.boxShadow = '0 20px 40px rgba(0,0,0,0.25)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0) scale(1)';
+    card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
   });
 });
 
-// ===============================
-// ===== MICRO ANIMATIONS ON HOVER =====
-function addHoverAnimation(cards, transformVal, shadowVal) {
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = transformVal;
-      card.style.boxShadow = shadowVal;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-      card.style.boxShadow = '';
-    });
+// =======================
+// ===== Skill Cards Hover Effect ===
+const skillCards = document.querySelectorAll('.skill-card');
+
+skillCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transform = 'translateY(-5px) scale(1.02)';
+    card.style.boxShadow = '0 15px 35px rgba(0,0,0,0.2)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0) scale(1)';
+    card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+  });
+});
+
+// =======================
+// ===== Contact Cards Hover Effect ===
+const contactCards = document.querySelectorAll('.contact-card');
+
+contactCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transform = 'translateY(-5px) scale(1.03)';
+    card.style.boxShadow = '0 15px 35px rgba(0,0,0,0.25)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0) scale(1)';
+    card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+  });
+});
+
+// =======================
+// ===== Hero Image Parallax / Subtle Animation ===
+const heroImg = document.querySelector('.hero-img');
+
+if(heroImg){
+  window.addEventListener('mousemove', (e) => {
+    const x = (window.innerWidth - e.pageX*2)/100;
+    const y = (window.innerHeight - e.pageY*2)/100;
+    heroImg.style.transform = `translate(${x}px, ${y}px)`;
   });
 }
 
-addHoverAnimation(projectCards, 'translateY(-8px) scale(1.03)', '0 25px 60px rgba(0,0,0,0.25)');
-addHoverAnimation(skillCards, 'translateY(-5px)', '0 15px 40px rgba(0,0,0,0.2)');
-addHoverAnimation(contactCards, 'translateY(-5px)', '0 15px 40px rgba(0,0,0,0.2)');
+// =======================
+// ===== Smooth Anchor Links ===
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-// ===============================
-// ===== HERO SPARKLE EFFECT =====
-if (heroSpan) {
-  setInterval(() => {
-    const glow = Math.random() * 15 + 5;
-    const opacity = Math.random();
-    heroSpan.style.textShadow = `0 0 ${glow}px rgba(212,175,55,${opacity})`;
-  }, 400);
-}
-
-// ===============================
-// ===== SMOOTH SCROLL FOR INTERNAL LINKS =====
 anchorLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    const target = document.querySelector(link.getAttribute('href'));
+    if(target){
+      target.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   });
 });
 
