@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - Andreea S</title>
-<meta name="description" content="Contactează-mă pe Instagram, LinkedIn sau prin alte platforme pentru colaborări și proiecte web design.">
+<meta name="description" content="Contactează-mă pe Instagram sau LinkedIn pentru colaborări și proiecte web design.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -25,29 +25,39 @@
   </nav>
 </header>
 
-<!-- Contact Section -->
-<section id="contact" class="fade-in">
-  <h2>Contactează-mă</h2>
-  <p>Mă poți găsi pe următoarele platforme sau să mă urmărești pentru proiecte și inspirație:</p>
+<main>
+  <!-- Hero Section -->
+  <section class="hero contact-hero fade-in">
+    <div class="hero-content">
+      <h1>Contactează-mă</h1>
+      <p>Dacă vrei să colaborezi, să pui întrebări sau doar să spui „Hi!”, mă poți găsi pe rețelele sociale sau prin link-urile de mai jos 🌸</p>
+    </div>
+  </section>
 
-  <div class="contact-cards">
-    <!-- Instagram -->
-    <div class="contact-card fade-in">
+  <!-- Contact Cards -->
+  <section class="contact-cards fade-in">
+    <div class="contact-card">
       <div class="icon">
         <i class="fab fa-instagram"></i>
       </div>
-      <p><a href="https://www.instagram.com/l_andreea_22" target="_blank">@l_andreea_22</a></p>
+      <p><a href="https://www.instagram.com/l_andreea_22" target="_blank" rel="noopener noreferrer">@l_andreea_22</a></p>
     </div>
 
-    <!-- LinkedIn -->
-    <div class="contact-card fade-in">
+    <div class="contact-card">
       <div class="icon">
         <i class="fab fa-linkedin"></i>
       </div>
-      <p><a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">Andreea Luiza Sandu</a></p>
+      <p><a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank" rel="noopener noreferrer">Andreea Luiza Sandu</a></p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta fade-in">
+    <h2>Hai să creăm ceva împreună!</h2>
+    <p>Proiectele mele sunt deschise pentru colaborări și idei creative ✨</p>
+    <a href="portfolio.html" class="btn btn-hero">Vezi portofoliul meu</a>
+  </section>
+</main>
 
 <!-- Footer -->
 <footer>
@@ -56,8 +66,9 @@
     <a href="https://www.instagram.com/l_andreea_22" target="_blank">Instagram</a>
     <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">LinkedIn</a>
   </div>
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top">↑ Sus</button>
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Înapoi sus">↑</button>
 </footer>
 
 </body>
 </html>
+
