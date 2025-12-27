@@ -3,40 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portofoliu Andreea S</title>
-<meta name="description" content="Exploră proiectele Andreea S: magazine online, aplicații web și proiecte creative dezvoltate cu Django, HTML, CSS și JavaScript.">
+<title>Despre Andreea S</title>
+<meta name="description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-<!-- Navbar -->
+<link rel="icon" href="favicon.ico">
+<meta property="og:title" content="Portofoliu - Andreea S">
+<meta property="og:description" content="Proiecte personale ale Andreea S – aplicații web, magazine online și proiecte front-end.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/portfolio">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Sari la conținut</a>
+
+<!-- ================= HEADER ================= -->
 <header class="navbar">
-  <div class="logo">Andreea <span>S</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Acasă</a></li>
-      <li><a href="about.html">Despre mine</a></li>
-      <li><a href="portfolio.html" class="active">Portofoliu</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+
+<a href="index.html" class="logo">
+  Andreea <span>S</span>
+</a>
+
+<button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
+  <span class="hamburger-line" aria-hidden="true"></span>
+</button>
+
+    <nav aria-label="Meniul principal">
+      <ul id="primary-navigation" class="nav-list">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre mine</a></li>
+        <li><a href="portfolio.html" class="active" aria-current="page">Portofoliu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
 
-<main>
+<main id="main">
+
 <!-- Hero Section -->
 <section class="hero fade-in hero-portfolio">
   <div class="hero-content">
     <h1>Proiectele <span>mele</span></h1>
-    <p>Descoperă magazine online, aplicații web și proiecte creative dezvoltate cu pasiune și atenție la detalii 💖</p>
+    <p>Descoperă magazine online, aplicații web și proiecte creative dezvoltate cu pasiune și atenție la detalii <span aria-hidden="true">💖</span></p>
   </div>
 </section>
-
 <!-- Portfolio Section -->
 <section class="projects fade-in">
   <div class="projects-grid">
-
     <!-- Proiect 1: Andreea's PerfumStore -->
     <article class="project-card fade-in project-card-soft-bg">
       <h3>🌸 Andreea's PerfumStore</h3>
@@ -44,7 +64,6 @@
         Magazin online de parfumuri dezvoltat în Django Python, cu o experiență captivantă pentru cumpărători. 
         Focus pe UX simplu și elegant, cu palete pastel și interacțiuni delicate.
       </p>
-
       <h4>✨ Funcționalități Utilizator:</h4>
       <ul>
         <li>✅ Vizualizare produse în carduri responsive</li>
@@ -53,22 +72,19 @@
         <li>✅ Autentificare și dashboard personal</li>
         <li>✅ Urmărire comenzi</li>
       </ul>
-
       <h4>✨ Funcționalități Admin:</h4>
       <ul>
         <li>✅ Adăugare, editare și ștergere produse</li>
         <li>✅ Tabel cu lista produselor</li>
       </ul>
-
       <h4>🛠️ Tehnologii:</h4>
       <ul>
         <li>Django Framework, Python</li>
         <li>HTML, CSS, JavaScript</li>
         <li>Django Templates, Authentication, Sessions</li>
       </ul>
-
       <div class="project-links">
-        <a href="https://github.com/SanduAndreea22/AndreeaSPerfumStore" target="_blank" class="btn light">GitHub</a>
+        <a href="https://github.com/SanduAndreea22/AndreeaSPerfumStore" target="_blank" class="btn btn-primary">GitHub</a>
       </div>
     </article>
 
@@ -79,7 +95,6 @@
         Magazin online complet creat cu HTML5, CSS3 și JavaScript. 
         Interfață responsive și interactivă, cu animații subtile și navigare intuitivă.
       </p>
-
       <h4>✨ Funcționalități Utilizator:</h4>
       <ul>
         <li>✅ Vizualizare produse în carduri responsive</li>
@@ -87,22 +102,19 @@
         <li>✅ Adăugare în coș, checkout complet</li>
         <li>✅ Confirmare comandă cu popup animat</li>
       </ul>
-
       <h4>✨ Funcționalități Admin:</h4>
       <ul>
         <li>✅ Adăugare, editare și ștergere produse</li>
         <li>✅ Tabel cu lista produselor</li>
       </ul>
-
       <h4>🛠️ Tehnologii:</h4>
       <ul>
         <li>HTML5, CSS3 (Flexbox, Grid, Animations)</li>
         <li>JavaScript (DOM manipulation, event handling)</li>
         <li>Fonturi: Red Hat Display</li>
       </ul>
-
       <div class="project-links">
-        <a href="https://github.com/SanduAndreea22/proiectcommerce" target="_blank" class="btn light">GitHub</a>
+        <a href="https://github.com/SanduAndreea22/proiectcommerce" target="_blank" class="btn btn-primary">GitHub</a>
       </div>
     </article>
 
@@ -113,7 +125,6 @@
         Aplicație web creată cu Django, care ajută utilizatorii să își organizeze ziua într-un mod blând și conștient, punând accent pe starea emoțională și reflecție. 
         Gândită ca un safe space digital pentru planificarea zilnică.
       </p>
-
       <h4>✨ Funcționalități:</h4>
       <ul>
         <li>✅ Înregistrare cu email + parolă</li>
@@ -125,7 +136,6 @@
         <li>✅ Interfață simplă, aerisită, pastel, orientată spre wellbeing</li>
         <li>✅ Sistem stabil, fără confirmare email</li>
       </ul>
-
       <h4>🛠️ Tehnologii:</h4>
       <ul>
         <li>Django</li>
@@ -136,13 +146,11 @@
         <li>Static files: WhiteNoise</li>
         <li>Python 3.x</li>
       </ul>
-
       <div class="project-links">
-        <a href="https://github.com/SanduAndreea22/day_planner" target="_blank" class="btn light">GitHub</a>
-        <a href="https://day-planner-e2sv.onrender.com" target="_blank" class="btn btn-hero">Demo Live</a>
+        <a href="https://github.com/SanduAndreea22/day_planner" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="https://day-planner-e2sv.onrender.com" target="_blank" class="btn btn-primary">Demo Live</a>
       </div>
     </article>
-
   </div>
 </section>
 
@@ -152,17 +160,28 @@
   <a href="contact.html" class="btn btn-hero">Contactează-mă</a>
 </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Andreea S | Made with 💕 and a lot of coffee</p>
-  <div class="socials">
-    <a href="https://www.instagram.com/l_andreea_22" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">LinkedIn</a>
-  </div>
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Înapoi sus">↑ Sus</button>
-</footer>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2025 Andreea S | Web & App Developer</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/andreealuizasandu/"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="https://github.com/SanduAndreea22"
+         target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
+ </footer>
 
 </body>
 </html>
+
+
+
+
 
 

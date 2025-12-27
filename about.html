@@ -4,145 +4,257 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Despre Andreea S</title>
-<meta name="description" content="Sunt Andreea, pasionată de web design și tehnologie. Descoperă cursurile, proiectele și hobby-urile mele.">
+<meta name="description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-<!-- Navbar -->
+<link rel="icon" href="favicon.ico">
+<meta property="og:title" content="Despre Andreea S">
+<meta property="og:description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/despre">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Sari la conținut</a>
+
+<!-- ================= HEADER ================= -->
 <header class="navbar">
-  <div class="logo">Andreea <span>S</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Acasă</a></li>
-      <li><a href="about.html" class="active">Despre mine</a></li>
-      <li><a href="portfolio.html">Portofoliu</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+
+<a href="index.html" class="logo">
+  Andreea <span>S</span>
+</a>
+
+<button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
+  <span class="hamburger-line" aria-hidden="true"></span>
+</button>
+
+    <nav aria-label="Meniul principal">
+      <ul id="primary-navigation" class="nav-list">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html" class="active" aria-current="page">Despre mine</a></li>
+        <li><a href="portfolio.html">Portofoliu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
 
-<main>
-<!-- Hero Section -->
+<main id="main">
+
+<!-- HERO -->
 <section class="hero about-hero fade-in">
-  <div class="hero-content">
+  <div class="hero-text">
     <h1>Despre <span>mine</span></h1>
-    <p>Sunt Andreea, pasionată de web design, front-end development și experiențe digitale elegante. Îmi place să transform conceptele în site-uri interactive și pline de feminitate. 💖</p>
-    <img src="img/andreea-hero.jpg" alt="Andreea S" class="hero-img fade-in-delay" loading="lazy">
+    <p>
+      Sunt Andreea, pasionată de web design, front-end development
+      și crearea de aplicații web cu personalitate.
+      Îmi place să transform ideile în experiențe digitale
+      feminine, clare și bine structurate,
+      unde estetica se îmbină cu logica. <span aria-hidden="true">💖</span>
+    </p>
+     <img src="img/andreea-hero.jpg" alt="Andreea S" class="hero-img fade-in-delay" loading="lazy">
   </div>
 </section>
 
-<!-- Educație & Cursuri -->
+<!-- STUDII -->
 <section class="education fade-in">
-  <h2>Cursuri și Educație</h2>
-  <div class="timeline-container" role="list">
+  <h2>Studii</h2>
 
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Sept 2023 – Feb 2025</div>
+  <div class="timeline-container">
+    <div class="timeline-item">
       <div class="timeline-content">
-        <strong>IT Factory Academy – Python & Testare Automată</strong>
-        <p>Am parcurs un program intensiv de Python și Testare Automată, învățând metodologii precum BDD și design pattern POM. Primul meu proiect real a fost realizat în Mai 2024, aplicând cunoștințele teoretice în practică.</p>
+        <div class="timeline-year">2019 – 2022</div>
+        <strong>Licență – Finanțe</strong>
+        <p>
+          Studii universitare în domeniul financiar,
+          care mi-au dezvoltat gândirea analitică,
+          atenția la detalii și capacitatea de a lucra structurat.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">2015 – 2019</div>
+        <strong>Liceu – Filologie</strong>
+        <p>
+          Colegiul Național „Mihai Eminescu”, Buzău.
+          Accent pe comunicare, analiză critică și exprimere clară.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURSURI -->
+<section class="education fade-in">
+  <h2>Cursuri & Formare IT</h2>
+
+  <div class="timeline-container">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">Sept 2023 – Feb 2024</div>
+        <strong>IT Factory Academy – Python & Testare Automată - Certificat Programator 
+          (acreditat de Ministerul Educației)
+        </strong>
+        <p>
+          Program intensiv axat pe programare Python,
+          testare automată și bune practici de structurare a codului.
+        </p>
         <p><strong>Skill-uri:</strong> Python, Testare Automată, BDD, POM</p>
       </div>
     </div>
 
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Martie 2024</div>
+    <div class="timeline-item">
       <div class="timeline-content">
-        <strong>WordPress Website – Portofoliu Online</strong>
-        <p>Am creat un portofoliu personalizat în WordPress, combinând design responsive și interactivitate. Am explorat PHP, HTML și CSS pentru a face site-ul ușor de navigat și plăcut vizual.</p>
-        <p><strong>Skill-uri:</strong> WordPress, PHP, HTML, CSS, Responsive Design</p>
+        <div class="timeline-year">Martie 2024</div>
+        <strong>WordPress – Portofoliu Online</strong>
+        <p>
+          Crearea unui site de tip portofoliu,
+          cu focus pe design responsive și experiența utilizatorului.
+        </p>
+        <p><strong>Skill-uri:</strong> WordPress, HTML, CSS, PHP</p>
       </div>
     </div>
 
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Aprilie 2024</div>
+    <div class="timeline-item">
       <div class="timeline-content">
+        <div class="timeline-year">Aprilie 2024</div>
         <strong>Baze de date</strong>
-        <p>Curs de inițiere în baze de date relaționale, crearea și manipularea tabelelor, interogări eficiente și legătura dintre date.</p>
-        <p><strong>Skill-uri:</strong> SQL, MySQL, Creare și modificare tabele</p>
+        <p>
+          Introducere în baze de date relaționale,
+          structurarea tabelelor și interogări SQL.
+        </p>
+        <p><strong>Skill-uri:</strong> SQL, MySQL</p>
       </div>
     </div>
 
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Mai 2024</div>
+    <div class="timeline-item">
       <div class="timeline-content">
+        <div class="timeline-year">Mai 2024</div>
         <strong>Start in IT</strong>
-        <p>Curs introductiv despre ecosistemul IT, roluri din industrie și planificare carieră orientată spre succes.</p>
-        <p><strong>Skill-uri:</strong> IT Fundamentals, Planificare carieră IT</p>
+        <p>
+          Curs introductiv despre ecosistemul IT
+          și orientare în carieră.
+        </p>
       </div>
     </div>
 
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Aug – Nov 2025</div>
+        <div class="timeline-item">
       <div class="timeline-content">
-        <strong>Digital Stack Orange – Web Front-End Development</strong>
-        <p>Program complet de Front-End Development, cu proiecte practice, HTML, CSS, JS, UX/UI și responsive design.</p>
-        <p><strong>Skill-uri:</strong> HTML, CSS, JavaScript, UX/UI, Responsive Design</p>
+        <div class="timeline-year">Septembrie 2024</div>
+        <strong>Copywriting – „Vorbește Brandul”</strong>
+        <p>Storytelling de brand și comunicare digitală.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">Aug – Nov 2025</div>
+        <strong>Digital Stack Orange – Front-End Development</strong>
+        <p>
+          HTML, CSS, JavaScript, UX/UI și proiecte practice.
+        </p>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- Experiență -->
+<!-- PROIECTE PERSONALE -->
 <section class="experience fade-in">
-  <h2>Experiență</h2>
-  <div class="timeline-container" role="list">
-    <div class="timeline-item" role="listitem">
-      <div class="timeline-year">Mai 2024</div>
+  <h2>Proiecte personale</h2>
+
+  <div class="timeline-container">
+    <div class="timeline-item">
       <div class="timeline-content">
-        <strong>Primul proiect real</strong>
-        <p>Am finalizat primul meu proiect real, aplicând cunoștințele acumulate la cursuri și exersând logica programării împreună cu design-ul vizual. Am învățat să gestionez proiecte de la zero, să comunic eficient cu clienții și să găsesc soluții creative pentru probleme reale.</p>
+        <div class="timeline-year">2024 – Prezent</div>
+        <strong>Aplicații web & proiecte personale</strong>
+        <p>
+          Dezvolt aplicații web folosind <strong>Python și Django</strong>,
+          aplicând concepte de backend, baze de date și front-end.
+          Aceste proiecte reprezintă baza portofoliului meu.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Pasiuni & Hobby-uri -->
+<!-- PASIUNI -->
 <section class="skills fade-in">
-  <h2>Pasiuni & Hobby-uri</h2>
-  <div class="skills-grid" role="list">
-    <div class="skill-card" role="listitem">
+  <h2>Pasiuni & stil personal</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
       <h3>☕ Cafea dimineața</h3>
-      <p>Momentul meu de focus înainte de a scrie prima linie de cod sau de a schița un design.</p>
+      <p>Momentul meu de focus înainte de a începe programarea.</p>
     </div>
-    <div class="skill-card" role="listitem">
-      <h3>🎨 Palete pastel & detalii delicate</h3>
-      <p>Culorile pastel transmit delicatețe, armonie și feminitate, pe care le integrez în proiectele web.</p>
+
+    <div class="skill-card">
+      <h3>🎨 Palete pastel</h3>
+      <p>Prefer interfețe curate, feminine și aerisite.</p>
     </div>
-    <div class="skill-card" role="listitem">
-      <h3>🌸 Floricele & micro-interacțiuni</h3>
-      <p>Adaug detalii jucăușe și micro-animations care dau farmec și personalitate proiectelor mele.</p>
+
+    <div class="skill-card">
+      <h3>🌸 Micro-interacțiuni</h3>
+      <p>Detalii mici care fac aplicațiile mai prietenoase.</p>
     </div>
-    <div class="skill-card" role="listitem">
-      <h3>💻 Cod & creativitate</h3>
-      <p>Combin logica codului cu creativitatea artistică, dezvoltând site-uri funcționale și plăcute vizual.</p>
+
+    <div class="skill-card">
+      <h3>💻 Cod & logică</h3>
+      <p>Îmi place să înțeleg ce se întâmplă în spatele aplicațiilor.</p>
     </div>
-    <div class="skill-card" role="listitem">
-      <h3>🎶 Muzică lounge & vibe chic</h3>
-      <p>Muzica lounge mă inspiră să creez layout-uri și interfețe cu estetică sofisticată și relaxată.</p>
+
+    <div class="skill-card">
+      <h3>🎶 Muzică lounge</h3>
+      <p>Vibe calm care mă ajută să mă concentrez.</p>
     </div>
   </div>
 </section>
 
-<!-- Call to Action -->
-<section class="cta fade-in">
-  <h2>Vrei să vezi portofoliul meu și proiectele realizate?</h2>
-  <a href="portfolio.html" class="btn btn-hero">Vezi portofoliul</a>
-</section>
+<!-- CTA -->
 
+<section class="cta">
+  <div class="container text-center">
+
+    <h2>Vrei sa vezi ce am construit?</h2>
+    <a href="portfolio.html" class="btn btn-primary">
+      Vezi portofoliul
+    </a>
+
+  </div>
+</section>
 </main>
 
-<footer>
-  <p>© 2025 Andreea S | Made with 💕 and a lot of coffee</p>
-  <div class="socials">
-      <a href="https://www.instagram.com/l_andreea_22" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">LinkedIn</a>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <p>© 2025 Andreea S | Web & App Developer</p>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/andreealuizasandu/"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="https://github.com/SanduAndreea22"
+         target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
+
+    <button type="button" class="back-to-top" aria-label="Înapoi sus">
+      ↑
+    </button>
+
   </div>
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top">↑ Sus</button>
 </footer>
 
 </body>

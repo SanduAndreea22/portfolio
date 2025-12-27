@@ -7,25 +7,45 @@
 <meta name="description" content="Contactează-mă pe Instagram sau LinkedIn pentru colaborări și proiecte web design.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" href="favicon.ico">
+<meta property="og:title" content="Contact - Andreea S">
+<meta property="og:description" content="Contactează-mă pe Instagram sau LinkedIn pentru colaborări și proiecte web design.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/contact">
 </head>
 <body>
+<a class="skip-link" href="#main">Sari la conținut</a>
 
-<!-- Navbar -->
 <header class="navbar">
-  <div class="logo">Andreea <span>S</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Acasă</a></li>
-      <li><a href="about.html">Despre mine</a></li>
-      <li><a href="portfolio.html">Portofoliu</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+
+<a href="index.html" class="logo">
+  Andreea <span>S</span>
+</a>
+
+<button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
+  <span class="hamburger-line" aria-hidden="true"></span>
+</button>
+
+    <nav aria-label="Meniul principal">
+      <ul id="primary-navigation" class="nav-list">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre mine</a></li>
+        <li><a href="portfolio.html">Portofoliu</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
 
-<main>
+<main id="main">
+<main id="main">
   <!-- Hero Section -->
   <section class="hero contact-hero fade-in">
     <div class="hero-content">
@@ -55,18 +75,18 @@
   <section class="cta fade-in">
     <h2>Hai să creăm ceva împreună!</h2>
     <p>Proiectele mele sunt deschise pentru colaborări și idei creative ✨</p>
-    <a href="portfolio.html" class="btn btn-hero">Vezi portofoliul meu</a>
+    <a href="portfolio.html" class="btn btn-primary">Vezi portofoliul meu</a>
   </section>
 </main>
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Andreea S | Made with 💕 and a lot of coffee</p>
+  <p>© 2025 Andreea S | Made with <span aria-hidden="true">💕</span> and a lot of coffee</p>
   <div class="socials">
     <a href="https://www.instagram.com/l_andreea_22" target="_blank">Instagram</a>
     <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">LinkedIn</a>
   </div>
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Înapoi sus">↑</button>
+  <button type="button" class="back-to-top" aria-label="Înapoi sus">↑</button>
 </footer>
 
 </body>

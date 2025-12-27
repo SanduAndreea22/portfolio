@@ -3,80 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andreea S | Web Design & Creativity</title>
-<meta name="description" content="Andreea S - Web Design & Creativity. Descoperă proiecte feminine, elegante și interactive, inspirate de culori pastel și detalii delicate.">
+<title>Despre Andreea S</title>
+<meta name="description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
 
+<link rel="icon" href="favicon.ico">
+<meta property="og:title" content="Andreea S | Web & App Developer">
+<meta property="og:description" content="Andreea S – Web & App Developer. Junior Python Developer (Django) cu focus pe aplicații web bine structurate.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Sari la conținut</a>
+
+<!-- ================= HEADER ================= -->
 <header class="navbar">
-  <div class="logo">Andreea <span>S</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Acasă</a></li>
-      <li><a href="about.html">Despre mine</a></li>
-      <li><a href="portfolio.html">Portofoliu</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+
+<a href="index.html" class="logo">
+  Andreea <span>S</span>
+</a>
+
+<button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
+  <span class="hamburger-line" aria-hidden="true"></span>
+</button>
+
+    <nav aria-label="Meniul principal">
+      <ul id="primary-navigation" class="nav-list">
+        <li><a href="index.html" class="active" aria-current="page">Acasă</a></li>
+        <li><a href="about.html">Despre mine</a></li>
+        <li><a href="portfolio.html">Portofoliu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
 
-<main>
-<section class="hero fade-in">
-  <div class="hero-content">
-    <h1>Hi, I’m <span>Andreea S</span></h1>
-    <p>Sunt o <strong>girly girl</strong> pasionată de web design, care transformă ideile în experiențe digitale elegante, pline de culoare și feminitate ✨</p>
-    <a href="portfolio.html" class="btn btn-hero">Vezi proiectele mele</a>
-    <img src="hero-image.png" alt="Andreea S – Web Designer" class="hero-img fade-in-delay" loading="lazy">
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>
+        Hi, I’m <span>Andreea S</span><br>
+        <small>Web & App Developer</small>
+      </h1>
+      <p>
+        Junior Python Developer (Django) cu background în Finanțe,
+        pasionată de dezvoltarea de aplicații web practice,
+        bine structurate și ușor de utilizat.
+      </p>
+      <a href="portfolio.html" class="btn btn-primary">
+        Vezi portofoliul
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="about-preview fade-in">
-  <h2>Despre mine</h2>
-  <p>Îmbin logica codului cu creativitatea artistică, dezvoltând site-uri care nu sunt doar funcționale, ci și vizual atrăgătoare. Îmi place să creez micro-interacțiuni și layout-uri care fac utilizatorul să zâmbească 💖</p>
-  <a href="about.html" class="btn light">Află mai multe</a>
-</section>
-
-<section class="recent-projects fade-in">
-  <h2>Proiecte recente</h2>
-  <div class="projects-grid">
-    <a href="portfolio.html#perfumstore" class="project-card">
-      <h3>Andreea's PerfumStore</h3>
-      <p>Magazin online de parfumuri dezvoltat în Django, cu experiență captivantă pentru cumpărători și dashboard personalizat.</p>
-    </a>
-    <a href="portfolio.html#proiectcommerce" class="project-card">
-      <h3>Proiect Commerce</h3>
-      <p>Magazin online complet creat cu HTML, CSS și JS, responsive și interactiv pentru utilizatori și admin.</p>
+<!-- ================= DESPRE MINE ================= -->
+<section class="about-preview">
+  <div class="container text-center">
+    <h2>Despre mine</h2>
+    <p>
+      Îmbin gândirea analitică dobândită în domeniul financiar
+      cu dezvoltarea de aplicații web în Python și Django.
+      Sunt orientată spre cod curat, structură logică
+      și învățare continuă, cu atenție la experiența utilizatorului.
+    </p>
+    <a href="about.html" class="btn btn-primary">
+      Află mai multe
     </a>
   </div>
-  <a href="portfolio.html" class="btn light">Vezi toate proiectele</a>
 </section>
 
-<section class="testimonial fade-in">
-  <blockquote>
-    „Designul este despre emoție și detalii. Fiecare site pe care îl creez spune o poveste 💕”
-  </blockquote>
+<!-- ================= QUOTE ================= -->
+<section class="testimonial">
+  <div class="container text-center">
+    <blockquote>
+      „Îmi place să construiesc aplicații clare,
+      bine structurate și ușor de utilizat.
+      Codul curat și logica sunt mereu prioritare.”
+      <cite>— Andreea S</cite>
+    </blockquote>
+  </div>
 </section>
 
-<section class="cta fade-in">
-  <h2>Vrei să colaborezi sau să afli mai multe?</h2>
-  <a href="contact.html" class="btn btn-hero">Contactează-mă</a>
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container text-center">
+    <h2>Vrei să colaborăm?</h2>
+    <p>Hai să transformăm ideea ta într-o aplicație funcțională <span aria-hidden="true">✨</span></p>
+    <a href="contact.html" class="btn btn-primary">
+      Contactează-mă
+    </a>
+  </div>
 </section>
 
 </main>
 
-<footer>
-  <p>© 2025 Andreea S | Made with 💕 and a lot of coffee</p>
-  <div class="socials">
-    <a href="https://www.instagram.com/l_andreea_22" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/andreealuizasandu" target="_blank">LinkedIn</a>
-  </div>
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top">↑ Sus</button>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2025 Andreea S | Web & App Developer</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/andreealuizasandu/"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="https://github.com/SanduAndreea22"
+         target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
 </footer>
 
 </body>
 </html>
+
+
 
 
