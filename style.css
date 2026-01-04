@@ -9,7 +9,7 @@
   --font-heading: 'Playfair Display', serif;
 
   --light-bg: rgba(255,240,245,0.85);
-  --section-padding: 120px;
+  --section-padding: 80px;
   --transition: 0.3s ease;
   --shadow-light: 0 5px 15px rgba(0,0,0,0.05);
   --shadow-deep: 0 15px 40px rgba(0,0,0,0.15);
@@ -315,7 +315,7 @@ section p {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   position: relative;
   padding-left: 0;
 }

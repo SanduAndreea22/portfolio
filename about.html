@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Despre Andreea S</title>
-<meta name="description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
+<meta name="description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, pasiuni și abilități.">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
 <link rel="icon" href="favicon.ico">
 <meta property="og:title" content="Despre Andreea S">
-<meta property="og:description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, proiecte personale și pasiuni.">
+<meta property="og:description" content="Andreea S – Junior Python Developer (Django). Studii, cursuri IT, pasiuni și abilități.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example.com/despre">
 </head>
@@ -24,14 +24,13 @@
 <!-- ================= HEADER ================= -->
 <header class="navbar">
   <div class="container">
+    <a href="index.html" class="logo">
+      Andreea <span>S</span>
+    </a>
 
-<a href="index.html" class="logo">
-  Andreea <span>S</span>
-</a>
-
-<button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
-  <span class="hamburger-line" aria-hidden="true"></span>
-</button>
+    <button class="hamburger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="hamburger-line" aria-hidden="true"></span>
+    </button>
 
     <nav aria-label="Meniul principal">
       <ul id="primary-navigation" class="nav-list">
@@ -41,7 +40,6 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
   </div>
 </header>
 
@@ -58,185 +56,277 @@
       feminine, clare și bine structurate,
       unde estetica se îmbină cu logica. <span aria-hidden="true">💖</span>
     </p>
-     <img src="img/andreea-hero.jpg" alt="Andreea S" class="hero-img fade-in-delay" loading="lazy">
+    <img src="img/andreea-hero.jpg" alt="Andreea S" class="hero-img fade-in-delay" loading="lazy">
   </div>
 </section>
 
 <!-- STUDII -->
+<!-- ================= STUDII & CURSURI ================= -->
 <section class="education fade-in">
-  <h2>Studii</h2>
-
+  <h2 class="section-title">Studii</h2>
   <div class="timeline-container">
-    <div class="timeline-item">
+
+    <!-- IT Factory Academy -->
+    <div class="timeline-item card">
+      <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2019 – 2022</div>
-        <strong>Licență – Finanțe</strong>
-        <p>
-          Studii universitare în domeniul financiar,
-          care mi-au dezvoltat gândirea analitică,
-          atenția la detalii și capacitatea de a lucra structurat.
+        <div class="timeline-header">
+          <h3>IT Factory Academy</h3>
+          <span class="timeline-year">Sept. 2023 – Feb. 2024</span>
+        </div>
+        <p class="timeline-description">
+          Certificate Programmer (accredited by the Ministry of Education). Program intensiv de programare în Python și testare automată. Am învățat conceptele de bază ale programării, structuri de date, algoritmi, dezvoltare de aplicații software și scriere de cod eficient. Am construit teste automate pentru asigurarea calității și am aplicat metode de debug și optimizare a performanței.
         </p>
+        <p><strong>Aptitudini dobândite:</strong></p>
+        <ul class="skills-list">
+          <li>Django</li>
+          <li>PyCharm</li>
+          <li>Python Programming</li>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Testare Automată / QA Automation</li>
+          <li>Debugging & Code Optimization</li>
+          <li>BDD / POM</li>
+        </ul>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <!-- Academia de Studii Economice -->
+    <div class="timeline-item card">
+      <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-year">2015 – 2019</div>
-        <strong>Liceu – Filologie</strong>
-        <p>
-          Colegiul Național „Mihai Eminescu”, Buzău.
-          Accent pe comunicare, analiză critică și exprimere clară.
+        <div class="timeline-header">
+          <h3>Academia de Studii Economice din București</h3>
+          <span class="timeline-year">Oct. 2019 – Iul. 2022</span>
+        </div>
+        <p class="timeline-description">
+          Licență, Facultatea de Finanțe, Asigurări, Bănci și Burse de Valori. Fundament solid în management financiar, banking și investiții. Competențe practice în analiza și modelarea datelor financiare folosind Excel, R și EViews. Dezvoltarea gândirii analitice, a rezolvării problemelor și luarea deciziilor bazate pe date. Experiență teoretică în contabilitate, fiscalitate, piețe de capital și asigurări.
         </p>
+        <p><strong>Aptitudini dobândite:</strong></p>
+        <ul class="skills-list">
+          <li>Finanțe & Corporate Finance</li>
+          <li>Financial Accounting & Taxation</li>
+          <li>Introduction to Accounting & Public Finance</li>
+          <li>Banking & Capital Markets</li>
+          <li>Public Financial Policies</li>
+          <li>Analiză Financiară</li>
+          <li>Direct Investment & Financing</li>
+          <li>Insurance & Reinsurance</li>
+          <li>Banking Accounting</li>
+        </ul>
       </div>
     </div>
+
+    <!-- Colegiul Național Mihai Eminescu -->
+    <div class="timeline-item card">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3>Colegiul Național „Mihai Eminescu”</h3>
+          <span class="timeline-year">Sept. 2015 – Mai 2019</span>
+        </div>
+        <p class="timeline-description">
+          Liceu, Filologie. Curriculum axat pe limbă, literatură și comunicare. Dezvoltarea gândirii analitice și a abilităților critice. Competențe în redactare, cercetare și prezentarea clară a informațiilor.
+        </p>
+        <p><strong>Aptitudini dobândite:</strong></p>
+        <ul class="skills-list">
+          <li>Analiză literară și interpretare text</li>
+          <li>Redactare și exprimare clară</li>
+          <li>Comunicare și prezentare publică</li>
+          <li>Gândire critică și structurată</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- CURSURI -->
 <section class="education fade-in">
   <h2>Cursuri & Formare IT</h2>
-
   <div class="timeline-container">
 
     <div class="timeline-item">
       <div class="timeline-content">
-        <div class="timeline-year">Sept 2023 – Feb 2024</div>
-        <strong>IT Factory Academy – Python & Testare Automată - Certificat Programator 
-          (acreditat de Ministerul Educației)
-        </strong>
+        <div class="timeline-year">Aug – Nov 2025</div>
+        <strong>Digital Stack – Front-End Development (80h)</strong>
         <p>
-          Program intensiv axat pe programare Python,
-          testare automată și bune practici de structurare a codului.
+          Curs intensiv de front-end development, axat pe crearea de interfețe responsive și interactive. Am exersat HTML, CSS și JavaScript, aplicând concepte de UX/UI pentru experiențe web fluide.
         </p>
-        <p><strong>Skill-uri:</strong> Python, Testare Automată, BDD, POM</p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>HTML5 & CSS3 (Flexbox, Grid)</li>
+          <li>JavaScript (DOM, Event Handling, Animations)</li>
+          <li>Responsive Design și UX/UI</li>
+          <li>Version Control (Git/GitHub)</li>
+          <li>Debugging și optimizare front-end</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
-        <div class="timeline-year">Martie 2024</div>
-        <strong>WordPress – Portofoliu Online</strong>
+        <div class="timeline-year">Iul 2025</div>
+        <strong>Webcase – UI/UX Design</strong>
         <p>
-          Crearea unui site de tip portofoliu,
-          cu focus pe design responsive și experiența utilizatorului.
+          Curs de design de interfață și experiență utilizator. Am învățat să creez wireframe-uri, prototipuri și interfețe intuitive, folosind Figma și principii UX moderne.
         </p>
-        <p><strong>Skill-uri:</strong> WordPress, HTML, CSS, PHP</p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>UI Design & Prototyping (Figma)</li>
+          <li>UX Research & Wireframing</li>
+          <li>Auto Layout și Components în Figma</li>
+          <li>Design de interfețe estetice și intuitive</li>
+          <li>Testare UX și ajustare interfețe</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
-        <div class="timeline-year">Aprilie 2024</div>
-        <strong>Baze de date</strong>
+        <div class="timeline-year">Sept 2024</div>
+        <strong>Magic Copywriting – Tabăra „Vorbește Brandul”</strong>
         <p>
-          Introducere în baze de date relaționale,
-          structurarea tabelelor și interogări SQL.
+          Tabără de copywriting pentru branduri, unde am exersat scrierea de mesaje persuasive, storytelling și comunicare digitală creativă pentru proiecte reale.
         </p>
-        <p><strong>Skill-uri:</strong> SQL, MySQL</p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>Copywriting persuasiv</li>
+          <li>Storytelling pentru branduri</li>
+          <li>Comunicare digitală eficientă</li>
+          <li>Structurarea mesajelor pentru conversie</li>
+          <li>Creativitate în scrierea de conținut</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">Iun 2024</div>
+        <strong>IT Factory Academy – Testare Automată Python</strong>
+        <p>
+          Program intensiv de QA Automation, în care am construit teste automate cu Python și Selenium, aplicând metodologia BDD și structura Page Object Model.
+        </p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>Python (Programming Language)</li>
+          <li>Automatizare QA cu Selenium</li>
+          <li>BDD cu Behave</li>
+          <li>Page Object Model (POM)</li>
+          <li>Scriere teste robuste și scalabile</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-year">Mai 2024</div>
-        <strong>Start in IT</strong>
+        <strong>IT Factory Academy – Start in IT</strong>
         <p>
-          Curs introductiv despre ecosistemul IT
-          și orientare în carieră.
+          Introducere în ecosistemul IT, fundamente de programare și orientare în carieră. Am dobândit o bază solidă pentru dezvoltarea ulterioară în IT.
         </p>
-      </div>
-    </div>
-
-        <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="timeline-year">Septembrie 2024</div>
-        <strong>Copywriting – „Vorbește Brandul”</strong>
-        <p>Storytelling de brand și comunicare digitală.</p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>Orientare în ecosistemul IT</li>
+          <li>Fundamente IT</li>
+          <li>Introducere în programare</li>
+          <li>Conceperea proiectelor IT</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
-        <div class="timeline-year">Aug – Nov 2025</div>
-        <strong>Digital Stack Orange – Front-End Development</strong>
+        <div class="timeline-year">Apr 2024</div>
+        <strong>IT Factory Academy – Baze de date</strong>
         <p>
-          HTML, CSS, JavaScript, UX/UI și proiecte practice.
+          Curs practic despre baze de date relaționale, interogări SQL, structurarea tabelelor și optimizare. Am învățat să lucrez cu MySQL și să integrez date în proiecte web.
         </p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>SQL & MySQL</li>
+          <li>Structurarea tabelelor</li>
+          <li>Interogări complexe</li>
+          <li>Normalizare și optimizare baze de date</li>
+        </ul>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- PROIECTE PERSONALE -->
-<section class="experience fade-in">
-  <h2>Proiecte personale</h2>
-
-  <div class="timeline-container">
     <div class="timeline-item">
       <div class="timeline-content">
-        <div class="timeline-year">2024 – Prezent</div>
-        <strong>Aplicații web & proiecte personale</strong>
+        <div class="timeline-year">Mar 2024</div>
+        <strong>WordPress – Portofoliu Online</strong>
         <p>
-          Dezvolt aplicații web folosind <strong>Python și Django</strong>,
-          aplicând concepte de backend, baze de date și front-end.
-          Aceste proiecte reprezintă baza portofoliului meu.
+          Crearea unui portofoliu online complet, responsive, folosind WordPress și personalizare prin HTML, CSS și PHP. Focus pe UX și prezentarea profesională a proiectelor.
         </p>
+        <p><strong>Aptitudini:</strong></p>
+        <ul>
+          <li>Crearea site-urilor responsive</li>
+          <li>WordPress CMS</li>
+          <li>HTML, CSS & PHP pentru personalizare</li>
+          <li>Structurarea conținutului pentru UX</li>
+        </ul>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- PASIUNI -->
+<!-- ================= PASIUNI & STIL PERSONAL ================= -->
 <section class="skills fade-in">
-  <h2>Pasiuni & stil personal</h2>
+  <h2 class="section-title">🎨 Pasiuni & stil personal</h2>
 
   <div class="skills-grid">
+
     <div class="skill-card">
       <h3>☕ Cafea dimineața</h3>
-      <p>Momentul meu de focus înainte de a începe programarea.</p>
+      <p>Momentul meu de focus și energie înainte de a începe codul.</p>
     </div>
 
     <div class="skill-card">
       <h3>🎨 Palete pastel</h3>
-      <p>Prefer interfețe curate, feminine și aerisite.</p>
+      <p>Îmi place să creez interfețe curate, feminine și aerisite.</p>
     </div>
 
     <div class="skill-card">
       <h3>🌸 Micro-interacțiuni</h3>
-      <p>Detalii mici care fac aplicațiile mai prietenoase.</p>
+      <p>Detalii mici care fac aplicațiile mai prietenoase și captivante.</p>
     </div>
 
     <div class="skill-card">
       <h3>💻 Cod & logică</h3>
-      <p>Îmi place să înțeleg ce se întâmplă în spatele aplicațiilor.</p>
+      <p>Mă pasionează să înțeleg ce se întâmplă în spatele aplicațiilor.</p>
     </div>
 
     <div class="skill-card">
       <h3>🎶 Muzică lounge</h3>
-      <p>Vibe calm care mă ajută să mă concentrez.</p>
+      <p>Vibe calm care mă ajută să mă concentrez și să fiu creativă.</p>
     </div>
+
+    <div class="skill-card">
+      <h3>📚 Citit & dezvoltare personală</h3>
+      <p>Îmi place să citesc cărți despre productivitate, design și tehnologie.</p>
+    </div>
+
   </div>
 </section>
 
 <!-- CTA -->
-
 <section class="cta">
   <div class="container text-center">
-
-    <h2>Vrei sa vezi ce am construit?</h2>
-    <a href="portfolio.html" class="btn btn-primary">
-      Vezi portofoliul
-    </a>
-
+    <h2>Vrei să descoperi mai multe despre ce pot face?</h2>
+    <a href="portfolio.html" class="btn btn-primary">Vezi portofoliul</a>
   </div>
 </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
-    <p>© 2025 Andreea S | Web & App Developer</p> <div class="socials">
+    <p>© 2025 Andreea S | Web & App Developer</p>
+    <div class="socials">
       <a href="https://www.linkedin.com/in/andreealuizasandu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/SanduAndreea22" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
@@ -245,6 +335,3 @@
 
 </body>
 </html>
-
-
-
