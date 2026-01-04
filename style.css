@@ -521,68 +521,57 @@ section p {
 }
 
 /* ===== GRID ===== */
-/* ===== GRID ===== */
+/* ===== GRID REPARAT (FĂRĂ SUPRAPUNERI) ===== */
 .skills-grid {
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  /* Această linie este cheia: cardul are minim 250px. 
+     Dacă ecranul e mic, trec automat unul sub altul. */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 26px;
+  padding: 20px 0;
 }
 
-/* rândul 1 – 3 carduri */
-.skills-grid .skill-card:nth-child(1),
-.skills-grid .skill-card:nth-child(2),
-.skills-grid .skill-card:nth-child(3) {
-  grid-column: span 2;
+/* Ștergem orice forțare de coloane de tip nth-child care strica layout-ul pe mobil */
+.skills-grid .skill-card {
+  grid-column: auto !important;
 }
 
-/* rândul 2 – 2 carduri PERFECT CENTRATE */
-.skills-grid .skill-card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.skills-grid .skill-card:nth-child(5) {
-  grid-column: 4 / span 2;
-}
-
-
-/* ===== CARD ===== */
+/* ===== CARD STYLING (DESIGN-UL TĂU FRUMOS) ===== */
 .skill-card {
-  background: rgba(255,240,245,0.75);
+  background: rgba(255, 240, 245, 0.75);
   padding: 34px 28px;
   border-radius: 26px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* glow delicat */
+/* Glow-ul tău elegant */
 .skill-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at top,
-    rgba(212,175,55,0.25),
-    transparent 70%
-  );
+  background: radial-gradient(circle at top, rgba(212,175,55,0.25), transparent 70%);
   opacity: 0;
   transition: opacity 0.35s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 .skill-card:hover::before {
   opacity: 1;
 }
 
-/* hover elegant */
-.skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-/* ===== TITLU ===== */
 .skill-card h3 {
   font-size: 1.25rem;
   color: var(--mov-accent);
@@ -590,31 +579,12 @@ section p {
   font-weight: 600;
 }
 
-/* ===== TEXT ===== */
 .skill-card p {
   font-size: 1rem;
   line-height: 1.6;
   color: #4b2f5b;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 900px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills-grid .skill-card:nth-child(4),
-  .skills-grid .skill-card:nth-child(5) {
-    grid-column: auto;
-  }
-}
-
-@media (max-width: 500px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ================= HERO PORTFOLIO ================= */
 
